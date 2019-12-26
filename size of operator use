@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    float b;
+    double c;
+    char g;
+    printf("size of int,float,double,char:%dbytes \n %ld bytes \n %ld  bytes , %ld bytes \n",sizeof(a),sizeof(b),sizeof(c), sizeof(g));
+    return 0;  
+}
