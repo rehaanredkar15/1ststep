@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+ int i,j;
+ printf("enter the no");
+ scanf("%d %d",&i,&j);
+ printf("the gcd is %d",gcd(i,j));
+ return 0;
+}
+int gcd( int i,int j)
+{
+  if(j == 0)
+  {
+      return i;
+  }
+  return gcd(j,i%j);
+}
