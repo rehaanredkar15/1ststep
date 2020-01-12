@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,k,a[50][50],b[50][50],s[50][50],sum=0;
+    printf("enter the 9 elements for 2*2 matrix \n");
+    for(i=0;i<2;i++)
+    {
+        for(j=0;j<2;j++)
+        {
+             scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\n");
+
+     for(i=0;i<2;i++)
+    {
+        for(j=0;j<2;j++)
+        {
+             scanf("%d",&b[i][j]);
+        }
+    }
+
+    for(i=0;i<2;i++)
+    {
+        for(j=0;j<2;j++)
+        {
+            for(k=0;k<2;k++)
+            {
+                sum=sum+a[i][k]*b[k][j];
+            }
+            s[i][j]=sum;
+            sum=0;
+        }
+    }
+    printf("\n");
+
+ printf("the matrix multiplicatiion is ");
+ printf("\n");
+     for(i=0;i<2;i++)
+    {
+        for(j=0;j<2;j++)
+        {
+           printf("%d\t",s[i][j]);
+        }
+      printf("\n\n");
+    }
+
+    return 0;
+}
