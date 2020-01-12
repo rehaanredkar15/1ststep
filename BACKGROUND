@@ -1,0 +1,13 @@
+#include<windows.h>
+#include<stdio.h>
+
+int main()
+{
+    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+
+    //BACKGROUND_RED| BACKGROUND_GREEN| BACKGROUND_BLUE| BACKGROUND_INTENSITY
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),BACKGROUND_RED|BACKGROUND_RED|BACKGROUND_INTENSITY);
+    printf("\n HELLO !!");
+
+    return 0;
+}
