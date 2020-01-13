@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    char a[10],b[10];
+    printf("enter the first string\n");
+    gets(a);
+    printf("enter the second string\n");
+    gets(b);
+    string_con(a,b);
+    printf("the connected string is   %s\n",a);
+    return 0;
+}
+
+string_con(char *a,char *b)
+{
+   while(*a)
+   {
+       *a++;
+   }
+   while(*b)
+   {
+     *a=*b;
+     *a++;
+     *b++;
+   }
+   return *a='\0';
+}
