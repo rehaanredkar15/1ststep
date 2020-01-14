@@ -1,0 +1,14 @@
+#include<stdio.h>
+int sum(int a,int b);
+int main()
+{
+    int (*fptr)(int ,int);
+    fptr = sum;
+    int d = (*fptr)(4,6);
+    printf("%d",d);
+    return 0;
+}
+int sum(int a,int b)
+{
+  return a+b;
+}
