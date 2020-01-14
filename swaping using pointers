@@ -1,0 +1,26 @@
+#include<stdio.h>
+void swap(int a,int b);
+int main()
+{
+    int a,b,c,d;
+    printf("enter the first no");
+    scanf("%d",&a);
+    printf("enter the second no");
+    scanf("%d",&b);
+    swap(a,b);
+    return 0;
+}
+void swap(int a,int b)
+{
+    int *p,*q;
+    int c;
+    p=&a;
+    q=&b;
+    c=*p;
+    *p=*q;
+    *q=c;
+    a=*p;
+    b=*q;
+    printf("afetr swapping value of first no is %d and value of second no is %d",a,b);
+}
+
