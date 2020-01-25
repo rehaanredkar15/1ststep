@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{ 
+    int a=0,b=0,r=0,q=0;
+    printf("enter lavda :-");
+    scanf("%d",&a);
+    printf("enter chut:-");
+    scanf("%d",&b);
+    r=a/b;
+    q=a%b;
+    printf("after chudai value of remainder is %d and quotient is %d",r,q);
+    return 0;
+}
