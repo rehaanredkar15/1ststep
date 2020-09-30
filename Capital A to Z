@@ -3,10 +3,10 @@
 
 int main()
 {
-  int i;
-    for(i='A';i<='Z';++i)
+ 
+    for(int a=65;a<=90;a++)
       {
-      printf("%c\t",i);
+      printf("%c\t",a);
       }
     return 0;
 }
